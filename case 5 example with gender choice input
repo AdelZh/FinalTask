@@ -1,0 +1,20 @@
+  case 5:
+                    if (choice == 5) {
+                        System.out.print("Write name of the group to create the students for: ");
+                        String nameGroup = scanner11.next();
+                        System.out.print("Write name of student: ");
+                        String name3 = scanner11.next();
+                        scanner11.nextLine();
+                        System.out.print("Write fullName: ");
+                        String fullName = scanner11.next();
+                        scanner11.nextLine();
+                        System.out.print("Put email: ");
+                        String email22 = scanner11.next();
+                        scanner11.nextLine();
+                        System.out.print("Put password: ");
+                        int password1 = scanner11.nextInt();
+
+                        System.out.print("Put name of the gender: ");
+                        String genderSInput = scanner11.next();
+                        Gender gender = Gender.valueOf(genderSInput);
+                        System.out.println(studentService.addNewStudent(nameGroup, new Student(name3, fullName,email22, password1, gender)));
